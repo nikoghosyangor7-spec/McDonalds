@@ -1,0 +1,117 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root {
+    --border: rgba(150, 150, 150, 0.5);
+    --bgInputs: #555555;
+}
+
+body {
+    background: url(./img/body.png);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    opacity: 0;
+    margin-top: 20px;
+    width: 90%;
+    min-height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--border);
+    border-radius: 25px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0px 20px 20px 0px rgba(150, 150, 150, 0.5);
+    transition: all 0.7s ease;
+}
+
+.title {
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.inputs-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.inp {
+    width: 60%;
+    min-height: 50px;
+    font-size: 25px;
+    box-shadow: 0px 20px 20px 0px rgba(150, 150, 150);
+    background: var(--bgInputs);
+    color: white;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    border-radius: 25px;
+    caret-color: #c1bfbf;
+    text-align: center;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+}
+
+.inp:hover {
+    opacity: 0.7;
+}
+
+.inp:focus::placeholder {
+    color: transparent;
+}
+
+.btn {
+    width: 200px;
+    min-height: 40px;
+    margin-top: 15px;
+    background: #888888;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    box-shadow: 0px 20px 20px 0px rgba(150, 150, 150);
+    font-weight: bold;
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.btn:hover{
+    opacity: 0.9;
+}
+.btn:active{
+    transform: scale(0.98);
+}
+
+.res-wrapper {
+    margin-top: 5px;
+    width: 100%;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.res {
+    color: #f00c0c;
+    font-weight: bold;
+    font-size: 23px;
+}
+
+::placeholder {
+    color: #c1bfbf;
+}
