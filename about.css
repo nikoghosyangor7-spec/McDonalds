@@ -243,12 +243,14 @@ body {
     font-size: 17px;
     font-weight: normal;
 }
-@media(max-width:700px){
-    .text-infobox-wrapper{
+
+@media(max-width:700px) {
+    .text-infobox-wrapper {
         display: flex;
         flex-direction: column;
     }
-    .infobox{
+
+    .infobox {
         width: 100%;
     }
 }

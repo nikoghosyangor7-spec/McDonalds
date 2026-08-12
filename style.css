@@ -90,15 +90,18 @@ body {
     cursor: pointer;
     transition: all 0.3s ease;
 }
-.btn:hover{
+
+.btn:hover {
     opacity: 0.9;
 }
-.btn:active{
+
+.btn:active {
     transform: scale(0.98);
 }
 
 .res-wrapper {
-    margin-top: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     width: 100%;
     min-height: 40px;
     display: flex;
@@ -110,8 +113,21 @@ body {
     color: #f00c0c;
     font-weight: bold;
     font-size: 23px;
+    text-align: center;
 }
 
 ::placeholder {
     color: #c1bfbf;
+}
+
+@media(max-width:420px) {
+    .inp {
+        min-height: 30px;
+        font-size: 21px;
+        padding: 5px;
+    }
+
+    ::placeholder {
+        font-size: 21px;
+    }
 }
